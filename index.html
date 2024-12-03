@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta sobre el Medio Ambiente</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Vincula tu hoja de estilo -->
+</head>
+<body>
+  <h1 id="detitle">encuesta lali</h1>
+  <p id="dedescription">Por favor, complete el siguiente formulario para ayudarnos a entender su percepción sobre el medio ambiente.</p>
+
+  <form id="desurvey-form">
+    <!-- Campo para el nombre -->
+    <label for="name" id="name-label">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+
+    <!-- Campo para el correo electrónico -->
+    <label for="email" id="email-label">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+    
+    <!-- Campo para el número -->
+    <label for="number" id="number-label">Edad:</label>
+    <input type="number" id="number" name="number" placeholder="Ingrese su edad" min="18" max="100" required>
+
+    <!-- Select (desplegable) -->
+    <label for="dropdown">¿Qué tan preocupado estás por el cambio climático?</label>
+    <select id="dropdown" name="dropdown" required>
+      <option value="">Seleccione...</option>
+      <option value="muy_preocupado">Muy preocupado</option>
+      <option value="preocupado">Preocupado</option>
+      <option value="poco_preocupado">Poco preocupado</option>
+      <option value="no_preocupado">No preocupado</option>
+    </select>
+
+    <!-- Botones de opción (radio buttons) -->
+    <p>¿Crees que las personas están haciendo lo suficiente para proteger el medio ambiente?</p>
+    <label>
+      <input type="radio" name="opcion" value="si"> Sí
+    </label>
+    <label>
+      <input type="radio" name="opcion" value="no"> No
+    </label>
+
+    <!-- Casillas de verificación (checkboxes) -->
+    <p>¿Qué acciones tomas para ayudar al medio ambiente? (Selecciona las que apliquen)</p>
+    <label>
+      <input type="checkbox" name="acciones" value="reciclaje"> Reciclaje
+    </label>
+    <label>
+      <input type="checkbox" name="acciones" value="uso_energia_renovable"> Uso de energía renovable
+    </label>
+    <label>
+      <input type="checkbox" name="acciones" value="transporte_publico"> Uso de transporte público
+    </label>
+    <label>
+      <input type="checkbox" name="acciones" value="consumo_responsable"> Consumo responsable
+    </label>
+
+    <!-- Campo de texto para comentarios -->
+    <label for="comentarios">Comentarios adicionales sobre el medio ambiente:</label>
+    <textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí" rows="4" cols="50"></textarea>
+
+    <!-- Botón de envío -->
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
